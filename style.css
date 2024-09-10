@@ -1,12 +1,11 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+ 
 }
 body{
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 500;
-    background-color: rgb(245, 244, 244);
+    
     background-color: hsl(221, 100%, 96%);
 }
 
@@ -20,7 +19,6 @@ body{
     background-color: hsl(0, 0%, 100%);
     border: 0px solid hsl(0, 0%, 100%);
     border-radius: 18px;
-   
 }
 .main_left{
     flex-basis: 50%;
@@ -176,19 +174,30 @@ padding: 12px 70px;
 margin-top: 10px;
 margin-top: 12px;
 
-background-color: hsl(252, 94%, 56%);
-background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+/* background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); */
+background-color:  hsl(224, 30%, 27%);
 border: 0px solid hsl(252, 100%, 67%);
 border-radius: 25px;
 color: aliceblue;
 font-size: 10px;
 font-weight: 700;
 }
+input[type='button']:hover {
+
+background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+border: 0px solid hsl(252, 100%, 67%);
+border-radius: 25px;
+
+}
+
+
 
 @media all and (max-width:430px) and (max-height:944px){
-
-  
-
+*{
+    margin: 0;
+    padding: 0;
+}
     #area{
         width: 100%;
         height: auto;
