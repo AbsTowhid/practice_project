@@ -1,0 +1,62 @@
+@media all and (max-width:420px) {
+  
+    .start h1{
+    margin-right: 60px;
+    }
+    .side{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.side1{
+    flex-basis: 25%;
+    width: 25%;
+    margin-bottom: 50px;
+}
+.side2{
+    flex-basis: 25%;
+    width: 25%;
+}
+.people1::before{
+
+    height: 400px;
+    top: 150px;
+    left: 0;
+}
+/* .last_right{
+    overflow: hidden;
+} */
+.last_right input{    
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    width: 100%;
+    
+}
+.last_right input[type='button']{
+    width: 40%;
+    float: right;
+
+}
+.finishing{
+    flex-direction: column-reverse;
+
+}
+.finishing{
+
+
+    background-image: linear-gradient(to top, hsl(192, 100%, 9%) 56%, transparent 44%);
+    
+}
+#main{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    width: 100%;
+}
+}
