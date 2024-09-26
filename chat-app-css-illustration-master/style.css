@@ -26,11 +26,9 @@
 .div1 {
   background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   width: 63%;
-  height: 82%;
-  /* border-bottom-left-radius: 8rem 3rem;
-  border-bottom-right-radius: 22rem; */
-  border-bottom-left-radius: 12rem 5rem;
-  border-bottom-right-radius: 20rem 20rem;
+  height: 580px;
+  border-bottom-right-radius: 40rem 40rem;
+  border-bottom-left-radius: 33rem 20rem;
 }
 .div2 {
   width: 250px;
