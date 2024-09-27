@@ -14,9 +14,6 @@ Each projects linked to its output hosted on GitHub Pages.
 3. **chat-app-css-illustration-master**  
    [View Output for chat-app-css-illustration-master](https://abstowhid.github.io/practice_projects/chat-app-css-illustration-master/)
 
-4. **huddle-landing-page-with-curved-sections-master**  
-   [View Output for huddle-landing-page-with-curved-sections-master](https://abstowhid.github.io/practice_projects/huddle-landing-page-with-curved-sections-master/)
-
 ## Description
 
 This repository includes various components of the project with live previews linked above.
