@@ -40,25 +40,22 @@ body {
   height: 340px;
   width: 260px;
 }
-
-button {
+/* ?i did a mistake here. i forgot specificity */
+.product1 button {
   display: flex;
-  /* justify-content: flex-start;
-  align-items: flex-start; */
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 12px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   position: absolute;
   top: 236px;
   left: 70px;
-  border-radius: 25px;
-  white-space: nowrap;
   border: 1px solid brown;
-  transition: 0.9s;
+  transition: background-color 0.3s, transform 0.2s;
+  white-space: nowrap;
 }
 button img {
   width: 15px;
@@ -67,17 +64,16 @@ button img {
   margin: 0;
   padding: 0;
   margin-right: 4px;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
 }
 
 button:hover {
-  background-color: #e67e22;
+  background-color: #fb8c00;
+  transform: scale(1.05);
 }
-/* button:hover button i { 
-  color: white;
-} */
-button:visited {
-  background-color: #ff0505;
-}
+
 .price {
   width: 150px;
   height: 50px;
@@ -110,22 +106,56 @@ button:visited {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 15px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
+.cart::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cart::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.cart::-webkit-scrollbar-thumb {
+  /* margin: 10px; */
+  background: #bdd1df;
+  border-radius: 10px;
+}
+
+.cart::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
+}
+
 #confirm-order {
+  margin: 5px auto;
   display: block;
-  background-color: #2c3e50;
-  position: absolute;
+  background: #3498db;
+  position: relative;
+  right: auto;
   top: auto;
-  left: 28px;
+  left: auto;
   bottom: 0;
   width: 300px;
   height: 40px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.4s, transform 0.3s;
+  border: 0px;
+  border-radius: 10px;
 }
 #confirm-order:hover {
-  background-color: #6a89cc;
+  background: #2c3e50;
+  border: 0px;
 }
 
 @media all and (max-width: 430px) {
@@ -176,24 +206,25 @@ button:visited {
     text-align: left;
     left: 0;
     top: auto;
-    bottom: 0;
+    bottom: 12px;
   }
 
-  button {
+  .product1 button {
     padding: 8px 15px;
     border-radius: 25px;
     font-size: 12px;
     /* align-self: center; */
+    position: absolute;
     margin-top: auto;
-    top: 175px;
-    left: 40px;
+    top: 60%;
+    left: 20%;
   }
 
-  button:hover {
+  .product1 button:hover {
     background-color: #e67e22;
   }
 
-  button img {
+  .product1 button img {
     width: 15px;
     height: 15px;
     margin-right: 5px;
@@ -205,6 +236,7 @@ button:visited {
     height: auto;
     padding: 10px;
     padding-bottom: 50px;
+    overflow-y: scroll;
   }
 
   #confirm-order {
