@@ -1,6 +1,7 @@
 const cartItems = document.getElementById('cart-items');
 const totalPriceElement = document.getElementById('total-price');
 const orderMessage = document.getElementById('order-message');
+const mybtn = document.getElementById('confirm-order');
 let cart = {}; // To store cart items
 
 // Function to add event listeners to add-to-cart buttons
@@ -60,6 +61,8 @@ document.getElementById('confirm-order').addEventListener('click', () => {
     }
     orderDetails += `Total: $${totalPriceElement.innerText}`; // Include total price
     orderMessage.innerText = orderDetails;
+    mybtn.innerText = ' Order Confirmed😍';
+    mybtn.style.background = 'linear-gradient(45deg, #ff7e5f, #feb47b)';
   }
   orderMessage.style.display = 'block'; // Show the confirmation message
 });
