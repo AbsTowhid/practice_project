@@ -177,9 +177,10 @@ button:hover {
 
   .product {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(1fr, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: auto auto;
     gap: 10px;
+    flex-wrap: wrap;
   }
 
   .product1 {
@@ -187,11 +188,14 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 270px;
-    position: relative;
+    /* height: 270px; */
+    height: auto;
+    position: static;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    align-items: center;
+    min-width: 100px;
   }
 
   .product1 img {
@@ -204,9 +208,8 @@ button:hover {
     font-size: 12px;
     margin: 2px 0;
     text-align: left;
-    left: 0;
-    top: auto;
-    bottom: 12px;
+    position: static;
+    margin-left: 13px;
   }
 
   .product1 button {
@@ -214,10 +217,10 @@ button:hover {
     border-radius: 25px;
     font-size: 12px;
     /* align-self: center; */
-    position: absolute;
     margin-top: auto;
-    top: 60%;
-    left: 20%;
+    position: static;
+    white-space: nowrap;
+    margin-top: -5px;
   }
 
   .product1 button:hover {
@@ -241,8 +244,9 @@ button:hover {
 
   #confirm-order {
     width: 100%;
-    bottom: 10px;
+    bottom: 7px;
     left: 0;
     margin: 0 auto;
+    margin-top: 20px;
   }
 }
